@@ -41,10 +41,10 @@ export default function Contact() {
 
   return (
     <div className="pt-20">
-      <section className="relative py-20 bg-gradient-to-br from-blue-900 to-gray-900 text-white">
+      <section className="relative py-20 bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
-          <div className="w-20 h-1 bg-amber-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-white mx-auto mb-6"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Let's discuss how we can help bring your vision to life
           </p>
@@ -62,43 +62,43 @@ export default function Contact() {
 
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-black-900 w-12 h-12 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="bg-black w-12 h-12 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                     <Phone className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <a href="tel:0781176673" className="text-gray-700 hover:text-black-900 transition-colors">
-                      078 117 6673
+                    <a href="tel:0150041055" className="text-gray-700 hover:text-black transition-colors">
+                      015 004 1055
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-black-900 w-12 h-12 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="bg-black w-12 h-12 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <a href="mailto:foureyezgroup@gmail.com" className="text-gray-700 hover:text-black-900 transition-colors break-all">
+                    <a href="mailto:foureyezgroup@gmail.com" className="text-gray-700 hover:text-black transition-colors break-all">
                       foureyezgroup@gmail.com
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-black-900 w-12 h-12 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="bg-black w-12 h-12 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                     <Globe className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Website</h3>
-                    <a href="https://www.foureyesgroup.co.za" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black-900 transition-colors break-all">
+                    <a href="https://www.foureyesgroup.co.za" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black transition-colors break-all">
                       www.foureyesgroup.co.za
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-black-900 w-12 h-12 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="bg-black w-12 h-12 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -115,7 +115,7 @@ export default function Contact() {
                     href="https://www.instagram.com/foureyesgroup?igsh=MWw4dTQxOHIwMTNzNA=="
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gradient-to-br from-purple-600 to-pink-500 p-4 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-110"
+                    className="bg-black p-4 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-110"
                   >
                     <Instagram className="h-6 w-6 text-white" />
                   </a>
@@ -160,7 +160,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black-900 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all"
                     placeholder="Your name"
                   />
                 </div>
@@ -176,7 +176,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black-900 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -192,7 +192,7 @@ export default function Contact() {
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black-900 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all"
                     placeholder="Your phone number"
                   />
                 </div>
@@ -208,7 +208,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={6}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black-900 focus:border-transparent transition-all resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all resize-none"
                     placeholder="Tell us about your project or inquiry..."
                   />
                 </div>
@@ -216,7 +216,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full px-8 py-4 bg-blue-900 hover:bg-black-800 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
+                  className="w-full px-8 py-4 bg-black hover:bg-gray-800 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
                 >
                   {isSubmitting ? (
                     <>
@@ -236,15 +236,15 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="py-12 bg-blue-900 text-white">
+      <section className="py-12 bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Business?</h3>
           <p className="text-gray-300 mb-6">
             Join the many satisfied clients who trust Four Eyes Group for innovative solutions
           </p>
           <a
-            href="tel:0781176673"
-            className="inline-block px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            href="tel:0150041055"
+            className="inline-block px-8 py-4 bg-white hover:bg-gray-200 text-black font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Call Us Now
           </a>

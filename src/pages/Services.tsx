@@ -76,10 +76,10 @@ export default function Services() {
 
   return (
     <div className="pt-20">
-      <section className="relative py-20 bg-gradient-to-br from-blue-900 to-gray-900 text-white">
+      <section className="relative py-20 bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-6">Our Services</h1>
-          <div className="w-20 h-1 bg-amber-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-white mx-auto mb-6"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Comprehensive solutions across multiple industries, delivered with expertise and innovation.
           </p>
@@ -105,13 +105,13 @@ export default function Services() {
                         alt={service.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black-900/80 to-transparent"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                     </div>
                   </div>
 
                   <div className={isEven ? 'lg:order-2' : 'lg:order-1'}>
                     <div className="flex items-center mb-6">
-                      <div className="bg-black-900 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
+                      <div className="bg-black w-16 h-16 rounded-lg flex items-center justify-center mr-4">
                         <Icon className="h-8 w-8 text-white" />
                       </div>
                       <h2 className="text-3xl font-bold text-gray-900">{service.title}</h2>
@@ -120,7 +120,7 @@ export default function Services() {
                     <div className="space-y-3">
                       {service.details.map((detail, idx) => (
                         <div key={idx} className="flex items-start">
-                          <Check className="h-6 w-6 text-amber-500 mr-3 flex-shrink-0 mt-0.5" />
+                          <Check className="h-6 w-6 text-black mr-3 flex-shrink-0 mt-0.5" />
                           <span className="text-gray-700">{detail}</span>
                         </div>
                       ))}
@@ -133,7 +133,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="py-20 bg-blue-900 text-white">
+      <section className="py-20 bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
@@ -141,7 +141,7 @@ export default function Services() {
           </p>
           <a
             href="#contact"
-            className="inline-block px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="inline-block px-8 py-4 bg-white hover:bg-gray-200 text-black font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Get In Touch
           </a>

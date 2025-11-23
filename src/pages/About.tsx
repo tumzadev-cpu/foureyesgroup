@@ -31,10 +31,10 @@ export default function About() {
 
   return (
     <div className="pt-20">
-      <section className="relative py-20 bg-gradient-to-br from-blue-900 to-gray-900 text-white">
+      <section className="relative py-20 bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-6">About Four Eyes Group</h1>
-          <div className="w-20 h-1 bg-amber-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-white mx-auto mb-6"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             A New Perspective on Multi-Sector Excellence
           </p>
@@ -46,7 +46,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Who We Are</h2>
-              <div className="w-20 h-1 bg-amber-500 mb-6"></div>
+              <div className="w-20 h-1 bg-black mb-6"></div>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Four Eyes Group is a dynamic, multi-sector enterprise committed to delivering innovative and reliable solutions across key industries. With our motto, "A New Perspective," we approach every project with fresh insights, cutting-edge expertise, and a dedication to excellence.
               </p>
@@ -60,7 +60,7 @@ export default function About() {
                 alt="Team collaboration"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="bg-white p-10 rounded-2xl shadow-lg">
               <div className="flex items-center mb-6">
-                <div className="bg-blue-900 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
+                <div className="bg-black w-16 h-16 rounded-lg flex items-center justify-center mr-4">
                   <Target className="h-8 w-8 text-white" />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
@@ -83,7 +83,7 @@ export default function About() {
 
             <div className="bg-white p-10 rounded-2xl shadow-lg">
               <div className="flex items-center mb-6">
-                <div className="bg-amber-500 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
+                <div className="bg-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
                   <Eye className="h-8 w-8 text-white" />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900">Our Vision</h2>
@@ -100,7 +100,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Core Values</h2>
-            <div className="w-20 h-1 bg-amber-500 mx-auto mb-6"></div>
+            <div className="w-20 h-1 bg-black mx-auto mb-6"></div>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               The principles that guide everything we do
             </p>
@@ -114,7 +114,7 @@ export default function About() {
                   key={index}
                   className="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
                 >
-                  <div className="bg-blue-900 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                  <div className="bg-black w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                     <Icon className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h3>
@@ -126,7 +126,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-green-50 to-black-50">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
@@ -135,24 +135,24 @@ export default function About() {
                 alt="Sustainable practices"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             </div>
 
             <div className="order-1 lg:order-2">
               <div className="flex items-center mb-6">
-                <div className="bg-green-600 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
+                <div className="bg-gray-800 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
                   <Leaf className="h-8 w-8 text-white" />
                 </div>
                 <h2 className="text-4xl font-bold text-gray-900">Sustainability Focus</h2>
               </div>
-              <div className="w-20 h-1 bg-green-600 mb-6"></div>
+              <div className="w-20 h-1 bg-black mb-6"></div>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 At Four Eyes Group, sustainability isn't just a buzzword—it's a core commitment. We integrate eco-friendly practices across all our operations, from renewable energy solutions to waste management and green construction methods.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="bg-green-100 p-2 rounded-full mr-3 mt-1">
-                    <Leaf className="h-5 w-5 text-green-600" />
+                  <div className="bg-gray-200 p-2 rounded-full mr-3 mt-1">
+                    <Leaf className="h-5 w-5 text-black" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Green Energy Solutions</h4>
@@ -160,8 +160,8 @@ export default function About() {
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 p-2 rounded-full mr-3 mt-1">
-                    <Leaf className="h-5 w-5 text-green-600" />
+                  <div className="bg-gray-200 p-2 rounded-full mr-3 mt-1">
+                    <Leaf className="h-5 w-5 text-black" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Waste Reduction</h4>
@@ -169,8 +169,8 @@ export default function About() {
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-green-100 p-2 rounded-full mr-3 mt-1">
-                    <Leaf className="h-5 w-5 text-green-600" />
+                  <div className="bg-gray-200 p-2 rounded-full mr-3 mt-1">
+                    <Leaf className="h-5 w-5 text-black" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Eco-Friendly Practices</h4>

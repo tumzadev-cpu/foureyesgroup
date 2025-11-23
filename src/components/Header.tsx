@@ -55,8 +55,8 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
                 onClick={() => handleNavClick(item.id)}
                 className={`text-sm font-medium transition-colors duration-200 ${
                   currentPage === item.id
-                    ? 'text-black-900 border-b-2 border-amber-500'
-                    : 'text-gray-700 hover:text-black-900'
+                    ? 'text-black border-b-2 border-black'
+                    : 'text-gray-600 hover:text-black'
                 }`}
               >
                 {item.label}
@@ -86,7 +86,7 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
                 onClick={() => handleNavClick(item.id)}
                 className={`block w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                   currentPage === item.id
-                    ? 'bg-black-900 text-white'
+                    ? 'bg-black text-white'
                     : 'text-gray-700 hover:bg-gray-100'
                 }`}
               >

@@ -91,10 +91,10 @@ export default function Gallery() {
 
   return (
     <div className="pt-20">
-      <section className="relative py-20 bg-gradient-to-br from-blue-900 to-gray-900 text-white">
+      <section className="relative py-20 bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-6">Project Gallery</h1>
-          <div className="w-20 h-1 bg-amber-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-white mx-auto mb-6"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Showcasing our diverse portfolio of successful projects across all industries
           </p>
@@ -110,7 +110,7 @@ export default function Gallery() {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
                   selectedCategory === category
-                    ? 'bg-blue-900 text-white shadow-lg'
+                    ? 'bg-black text-white shadow-lg'
                     : 'bg-white text-gray-700 hover:bg-gray-100'
                 }`}
               >
@@ -132,9 +132,9 @@ export default function Gallery() {
                     alt={image.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-black-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <span className="inline-block px-3 py-1 bg-amber-500 text-xs font-semibold rounded-full mb-2">
+                    <span className="inline-block px-3 py-1 bg-white text-black text-xs font-semibold rounded-full mb-2">
                       {image.category}
                     </span>
                     <h3 className="text-lg font-bold">{image.title}</h3>
@@ -152,7 +152,7 @@ export default function Gallery() {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-4 right-4 text-white hover:text-amber-500 transition-colors"
+            className="absolute top-4 right-4 text-white hover:text-gray-400 transition-colors"
             onClick={() => setSelectedImage(null)}
           >
             <X className="h-8 w-8" />
